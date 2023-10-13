@@ -1,0 +1,19 @@
+{
+  "name": "phaser3-typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --sourcemap --outdir=dist",
+    "release": "esbuild src/index.ts --bundle --outdir=dist --minify",
+    "watch": "esbuild src/index.ts --bundle --sourcemap --outdir=dist --watch --servedir=dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "0.19.4"
+  },
+  "dependencies": {
+    "phaser": "^3.60.0"
+  }
+}
